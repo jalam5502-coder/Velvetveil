@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Haircare — Velvet Veil</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo"><img src="logo.png" alt="Velvet Veil"/></a>
+  <ul class="nav-links">
+    <li><a href="skincare.html">Skincare</a></li>
+    <li><a href="haircare.html" class="active">Haircare</a></li>
+    <li><a href="index.html#brands">Brands</a></li>
+    <li><a href="index.html#connect">Contact</a></li>
+  </ul>
+  <div class="nav-actions">
+    <a href="https://www.facebook.com/share/1HM51JucHB/?mibextid=wwXIfr" target="_blank" class="nav-social-btn">Facebook</a>
+    <a href="index.html#connect" class="nav-order-btn">Order Now</a>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <span class="eyebrow">Haircare Collection</span>
+  <h1>Nourish, strengthen & shine</h1>
+  <p>From anti-dandruff shampoos to hair oils and serums — our haircare range from Skin'O and Innsaei covers everything your hair needs.</p>
+</div>
+
+<div class="filter-bar">
+  <button class="filter-btn active" onclick="filterProducts('all',this)">All Products</button>
+  <button class="filter-btn" onclick="filterProducts('shampoo',this)">Shampoos</button>
+  <button class="filter-btn" onclick="filterProducts('conditioner',this)">Conditioners</button>
+  <button class="filter-btn" onclick="filterProducts('oil',this)">Hair Oils</button>
+  <button class="filter-btn" onclick="filterProducts('serum',this)">Hair Serums</button>
+</div>
+
+<div class="products-section">
+
+  <!-- SKIN'O HAIR -->
+  <div class="brand-section">
+    <div class="brand-header">
+      <div class="brand-tag">skin'O <span class="brand-sub">Haircare Range</span></div>
+      <span class="brand-count">5 products</span>
+    </div>
+    <div class="product-grid">
+
+      <a href="index.html#connect" class="product-card" data-cat="shampoo">
+        <p class="card-brand">Skin'O</p>
+        <div class="card-icon icon-skino">🧴</div>
+        <h3 class="card-name">Anti-Dandruff Treatment Shampoo</h3>
+        <p class="card-size">220ml</p>
+        <p class="card-desc">Targets dandruff at the root while nourishing the scalp and strengthening hair from root to tip.</p>
+        <div class="card-price"><span class="price-main">৳280</span><span class="price-was">৳350</span></div>
+        <span class="card-badge">Popular</span>
+      </a>
+
+      <a href="index.html#connect" class="product-card" data-cat="shampoo">
+        <p class="card-brand">Skin'O</p>
+        <div class="card-icon icon-skino">💫</div>
+        <h3 class="card-name">Keratin Smooth Repair Shampoo</h3>
+        <p class="card-size">200ml</p>
+        <p class="card-desc">Keratin-enriched formula that repairs damage, reduces frizz, and restores silky smoothness with every wash.</p>
+        <div class="card-price"><span class="price-main">৳250</span><span class="price-was">৳350</span></div>
+      </a>
+
+      <a href="index.html#connect" class="product-card" data-cat="conditioner">
+        <p class="card-brand">Skin'O</p>
+        <div class="card-icon icon-skino">✿</div>
+        <h3 class="card-name">Moisture Repair Fusion Conditioner</h3>
+        <p class="card-size">220ml</p>
+        <p class="card-desc">Deep conditioning formula that restores moisture, seals split ends, and leaves hair soft and manageable.</p>
+        <div class="card-price"><span class="price-main">৳285</span><span class="price-was">৳350</span></div>
+      </a>
+
+      <a href="index.html#connect" class="product-card" data-cat="oil">
+        <p class="card-brand">Skin'O</p>
+        <div class="card-icon icon-skino">🌱</div>
+        <h3 class="card-name">Onion Hair Regrowth Oil</h3>
+        <p class="card-size">100ml</p>
+        <p class="card-desc">Onion-based hair oil that stimulates scalp circulation to promote hair regrowth and reduce hair fall.</p>
+        <div class="card-price"><span class="price-main">৳230</span><span class="price-was">৳290</span></div>
+      </a>
+
+      <a href="index.html#connect" class="product-card" data-cat="oil">
+        <p class="card-brand">Skin'O</p>
+        <div class="card-icon icon-skino">🫚</div>
+        <h3 class="card-name">Pure Castor Oil</h3>
+        <p class="card-size">100% Pure · 120ml</p>
+        <p class="card-desc">100% pure cold-pressed castor oil for thicker hair, longer lashes, and stronger brows. Multipurpose use.</p>
+        <div class="card-price"><span class="price-main">৳285</span><span class="price-was">৳350</span></div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- INNSAEI HAIR -->
+  <div class="brand-section">
+    <div class="brand-header">
+      <div class="brand-tag">Innsaei <span class="brand-sub">Haircare Range</span></div>
+      <span class="brand-count">1 product</span>
+    </div>
+    <div class="product-grid">
+
+      <a href="index.html#connect" class="product-card" data-cat="serum">
+        <p class="card-brand">Innsaei</p>
+        <div class="card-icon icon-innsaei">✨</div>
+        <h3 class="card-name">Smooth & Silky Hair Serum</h3>
+        <p class="card-size">50ml</p>
+        <p class="card-desc">Lightweight serum that tames frizz, nourishes hair fibres, and leaves hair visibly smooth and shiny with every use.</p>
+        <div class="card-price"><span class="price-main">৳499</span><span class="price-was">৳690</span></div>
+        <span class="card-badge">Top Rated ★5</span>
+      </a>
+
+    </div>
+  </div>
+
+</div>
+
+<div class="order-widget">
+  <h2>Place your order</h2>
+  <p>Message us on Facebook or WhatsApp and we'll deliver to your doorstep</p>
+  <div class="order-channels">
+    <a href="https://www.facebook.com/share/1HM51JucHB/?mibextid=wwXIfr" target="_blank" class="channel-btn">
+      <span class="ch-icon">📘</span><div class="ch-text"><span>Message us on</span><strong>Facebook</strong></div>
+    </a>
+    <a href="https://www.tiktok.com/@skinbliss.___?_r=1&_t=ZS-97MUA9SfoE4" target="_blank" class="channel-btn">
+      <span class="ch-icon">🎵</span><div class="ch-text"><span>Find us on</span><strong>TikTok</strong></div>
+    </a>
+    <a href="tel:01841197135" class="channel-btn">
+      <span class="ch-icon">📞</span><div class="ch-text"><span>Call / WhatsApp</span><strong>01841-197135</strong></div>
+    </a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div><div class="footer-logo"><img src="logo.png" alt="Velvet Veil"/><p>Curated Skincare · Bangladesh</p></div></div>
+    <div class="footer-links">
+      <div class="footer-col"><h5>Shop</h5><ul><li><a href="skincare.html">All Skincare</a></li><li><a href="haircare.html">All Haircare</a></li><li><a href="skincare.html#skino">Skin'O</a></li><li><a href="skincare.html#innsaei">Innsaei</a></li></ul></div>
+      <div class="footer-col"><h5>Connect</h5><ul><li><a href="https://www.facebook.com/share/1HM51JucHB/?mibextid=wwXIfr" target="_blank">Facebook</a></li><li><a href="https://www.tiktok.com/@skinbliss.___?_r=1&_t=ZS-97MUA9SfoE4" target="_blank">TikTok</a></li><li><a href="tel:01841197135">01841-197135</a></li></ul></div>
+    </div>
+  </div>
+  <div class="footer-bottom"><p>© 2024 Velvet Veil. All rights reserved.</p><p>Made with love in Bangladesh 🇧🇩</p></div>
+</footer>
+
+<script>
+function filterProducts(cat, btn) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.product-card').forEach(card => {
+    card.style.display = (cat === 'all' || card.dataset.cat === cat) ? 'block' : 'none';
+  });
+  document.querySelectorAll('.brand-section').forEach(section => {
+    const visible = [...section.querySelectorAll('.product-card')].some(c => c.style.display !== 'none');
+    section.style.display = visible ? 'block' : 'none';
+  });
+}
+</script>
+</body>
+</html>
